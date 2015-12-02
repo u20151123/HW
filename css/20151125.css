@@ -1,0 +1,260 @@
+@charset "utf-8";
+*{margin: 0; font-style: normal;}
+
+div#loading{
+	display: none;
+	width: auto; height: 100vh;
+	background: url(../images/20151125/loading.png) no-repeat center center;
+	background-size: cover;
+}
+.branch{
+	position: absolute;
+	//overflow: hidden;
+}
+.branch img{
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+	width: 0%; height: auto;
+}
+#branch1{
+	top: 35%;
+	width: 29%; height: 50%;
+}
+#branch2{
+	opacity: 0;
+	top: 35%;
+	width: 75%; height: 50%;
+}
+#branch3{
+	top: 45%;
+	width: 0%; height: 50%;
+}
+#branch3 img{
+	width: 0px;
+}
+#branch4{
+	top: 10%; right: 10%;
+	width: 10%; height: 11%;
+}
+#branch4 img{
+	top: 50%; right: 50%;
+}
+
+body{
+	width: 100%;
+	overflow-x: hidden;
+}
+header{
+	top: 0;
+	background: rgb(79,167,143);
+	width: 100%; height: 80px;
+}
+#mainText{
+	height: 100vh;
+}
+#mainText h2 , #mainText h3{
+	text-align: center;
+	margin-bottom: 55px;
+	
+	font-family: DFKai-sb;
+	font-weight: bold;
+}
+#mainText #concept{
+	margin-top: 55px;
+	text-align: center;
+}
+#mainText #concept a{
+	border: 1px solid #000;
+	width: 150px;
+	padding: 8px 15px;
+	
+	font-weight: bold;
+	text-decoration: none;
+	color: #000;
+}
+#mainText #concept a:hover{
+	border: none;
+	background: #229173;
+	color: #FFF;
+	
+	transition: 0.5s;
+}
+#toTop{
+	display: none; opacity: 0;
+	position: fixed; z-index: 1;
+	top: 92%;
+	left: 93%;
+	width: 40px; height: 40px;
+	
+	background: rgba(0,0,0,0.2);
+	-moz-border-radius: 20px; 
+	-webkit-border-radius: 20px; 
+	border-radius: 20px;
+	
+	text-align: center;
+}
+#ScrollDown{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 60px; height: 60px;
+	
+	background: rgba(0,0,0,0.2);
+	-moz-border-radius: 20px; 
+	-webkit-border-radius: 20px; 
+	border-radius: 20px;
+	
+	text-align: center;
+	color: #FFF;
+}
+#ScrollDown a{
+	color: #FFF;
+	text-decoration: none;
+}
+#ScrollDown a.arrow{
+	font-size: 26px;
+}
+#ScrollDown:hover{
+	color: rgba(255,255,255,.5);
+	transition: 0.5s;
+}
+#RECRUIT{
+	position: absolute;
+	top: 80%;
+	left: 5%;
+	background: url(../images/20151125/recruit.png) no-repeat center;
+	background-size: contain;
+	width: 140px; height: 140px;
+}
+#toTop a{
+	font-size: 26px;
+	font-weight: bold;
+	text-decoration: none;
+}
+#toTop:hover{
+	opacity: 0.5;
+	-webkit-transform: rotateY(360deg); /* Safari */
+    transform: rotateY(360deg);
+	transition: 0.7s;
+}
+header img{
+	float: left;
+	margin-top: 8px;
+	height: 70px;
+}
+ul#Menu{
+	float: left;
+	position: relative;
+	top: 28px;
+	width: 70%; height: 30px;
+	padding: 0;
+	
+	list-style: none;
+	text-align: center;
+}
+ul#Menu li{
+	display: inline-table;
+	margin-left: 18px; 
+	text-align: center;
+}
+ul#Menu li a{
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+ul#Menu li p.line{
+	position: relative;
+	left: 50%;
+	background: #FFF;
+	margin: 0;
+	width: 0%; height: 3px;
+	padding: 0;
+}
+#Business{
+	background: #EEF6F4;
+	height: 400px;
+}
+.intro{
+	float: left;
+	width: calc(100%/3);
+	text-align: center;
+	padding: 25px 3% 0;
+}
+.intro img{
+	margin: 5%;
+	width: 15%;
+}
+.intro p{
+	text-align: justify;
+}
+.intro p.introTitle{
+	font-weight: bold;
+	font-size: 17px;
+	text-align: center;
+}
+.introB{
+	clear: both;
+	text-align: center;
+}
+.introB p{
+	padding-top: 40px;
+}
+.introB a{
+	border: 2px solid #333;
+	padding: 10px 50px;
+	text-decoration: none;
+	color: #333;
+}
+.introB a:hover{
+	color: #FFF;
+	background: rgb(79,167,143);
+	border: none;
+	text-decoration: none;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+ul.imgHorizon{
+	position: relative; z-index: -1;
+	list-style: none;
+	margin: 0;
+	height: 400px;
+	padding: 0;
+}
+ul.imgHorizon li{
+	display: inline;
+	float: left;
+	overflow: hidden;
+	height: 400px;
+	text-align: justify;
+	/*font-size: 160px;
+	text-align: center;
+	line-height: 400px;*/
+	
+	//background: -webkit-radial-gradient(red, green, blue); /* Safari 5.1 to 6.0 */
+	//background: -o-radial-gradient(red, green, blue); /* For Opera 11.6 to 12.0 */
+	//background: -moz-radial-gradient(red, green, blue); /* For Firefox 3.6 to 15 */
+	//background: radial-gradient(#FFF 40%, #55EAEA 50%, #8EFF8E 60%, #9999FF 80%, #FFF); /* Standard syntax */
+}
+ul.imgHorizon img{
+	width: 100%; height: 400px;
+}
+ul.imgHorizon li a{
+	/*background: -webkit-linear-gradient(#CC89FF, #00F3FF);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	color: transparent;*/
+}
+@media screen and (max-width: 960px){
+header{
+	text-align: center;
+}
+header img{
+	float: none;
+}
+ul#Menu{
+	display: none;
+}
+
+}

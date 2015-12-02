@@ -1,0 +1,313 @@
+@charset "utf-8";
+*{margin: 0; border: 0; padding: 0; font-style: normal; font-weight: normal;}
+
+body{
+}
+#wrapper{
+	padding-left: 187px;
+}
+header{
+	background-color: #EEE9E2;
+	
+	width: 187px; height: 100%;
+	position: fixed;
+	top: 0; left: 0;
+	z-index: 100;
+}
+a{
+	text-decoration: none;
+	color: #FFF;
+}
+ul.menu-nav-list li a{
+	color: #999;
+}
+div#TopMenu , div#access , div.menuMB , div.menuMB0 , ul.menuBottom{
+	display: none;
+}
+div#menu{
+	margin: 0 24px;
+	height: 100%;
+}
+.menu-content{
+	margin: 25px 0;
+}
+ul , li{
+	list-style: none;
+	line-height: 28px;
+	font-size: 100%:
+}
+#menu a{
+	height: 28px;
+}
+#menu a:hover{
+	color: #333;
+}
+#menu-logo{
+	position:absolute;
+	top: 45%;
+}
+#menu-footer{
+	position: absolute;
+	bottom: 10%;
+	
+	color: #999;
+}
+
+#content{
+	width: 100%;
+	position:relative;
+}
+img{
+	width: 100%; height: auto;
+	vertical-align: bottom;
+}
+.boxL img, .boxM  img, .boxS img{
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+.boxL img:hover, .boxM  img:hover, .boxS img:hover{
+	-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+	-webkit-transition: 0.8s; /* Safari */
+    transition: 0.8s;
+}
+.box1 .boxL img{
+	-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+}
+.box1 , .box2  , .boxBottom{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+@media (min-width: 1001px){
+.box3 , .box4{
+	float: left;
+	position: relative;
+	width: 50%;
+	overflow: hidden;
+}
+}
+
+.box1 * , .box2 * , .box3 * , .box4 *{
+	position: relative;
+	background-color: rgb(36,40,47);
+	overflow: hidden;
+}
+/* box 1 */
+.boxL{
+	float: left;
+	width: 50%;
+}
+.boxM{
+	float: left;
+	width: 50%;
+}
+.boxS{
+	float: right;
+	width: 25%;
+}
+.boxT{
+	float: left;
+	width: 25%;
+}
+
+/* box 2*/
+.box2 .boxL{
+	float: right;
+}
+.box2 .boxM{
+	float: right;
+}
+.box2 .boxS{
+	float: left;
+}
+.box2 .boxT{
+	float: right;
+}
+
+/* box 3*/
+.box3 .boxM{
+	width: 100%;
+}
+.box3 .boxS{
+	float: left;
+	width: 50%;
+}
+
+/* box 4*/
+.box4 .boxT{
+	position: absolute;
+	top: 0; left: 0;
+	width: 50%;
+}
+.box4 .boxS {
+	float: right;
+	width: 50%;
+}
+.box4 .boxM{
+	width: 100%;
+}
+
+.boxText{
+	display: none;
+}
+
+footer{
+	background-color: rgb(36,40,47);
+	
+	position: relative;
+    left: 0; bottom: 0;	
+	width: 100%; height: 54px;
+}
+footer a{
+	color: #666;
+	text-decoration: none;
+	font-size: 10px;
+}
+.footerL{
+	float: left;
+	
+	width: 90%;
+	padding: 15px 0 11px 15px;
+}
+.footerL li{
+	display: inline;
+}
+.footerR{
+	float: right;
+	color: #666;
+	text-align: right;
+	font-size: 10px;
+}
+@media screen and (max-width: 1000px) {
+#wrapper{
+	padding: 70px 0 0;
+}
+header{
+	display: none;
+}
+div#TopMenu{
+	display: block;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	background: rgb(238,233,225);
+	width: 100%; height: 70px;
+}
+div#TopMenu img{
+	width: auto; height: 100%;
+}
+#TL , #TR{
+	position: absolute;
+	height: 70px;
+}
+#TL{
+	left: 0;
+}
+#TR{
+	right: 0;
+}
+div.menuMB0 , div.menuMB{
+	display: block;
+	background: #C2C3C1;
+	
+	color: #FFF;
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 60px;
+	letter-spacing: 5px;
+}
+div.menuMB{
+	margin: 1px 0;
+}
+div.menuMB.Selected{
+	color: #333;
+}
+
+div#body{
+	display: block;
+}
+.boxM img , .boxS img{
+	width: auto; height: 100%;	
+}
+.boxM img {
+	position: relative;
+	left: -50%;
+}
+.box3 img , .box4 img{
+	position: static;
+	width: 100%; height: auto;
+}
+.boxL{
+	float: left;
+	width: 67%;
+}
+.boxM , .boxS{
+	width: 33%; height: 50%;
+}
+.boxM{
+	top: 0;
+}
+.boxS{
+	bottom: 0;
+}
+.box1 .boxM , .box1 .boxS{
+	position: absolute;
+	right: 0;
+}
+.box2 .boxM , .box2 .boxS{
+	position: absolute;
+	left: 0;
+}
+.box3 .boxM , .box4 .boxM{
+	float: left;
+	width: 66.64%; height: auto;
+}
+.box3 .boxS{
+	float: left;
+	position: relative;
+	top: 0;
+	width: 33.36%; height: auto;
+}
+.box4 .boxS , .boxT{
+	display: none;
+}
+.boxText{
+	display: block;
+	clear: both;
+	background: rgb(36,40,47);
+	position: relative;
+	width: 90%;
+	padding: 24px 5% 50px;
+}
+.boxText p{
+	color: #7f8184;
+}
+.boxText span{
+	display: block;
+	margin: 10px 0;
+	color: #FFF;
+}
+ul.menuBottom {
+	display: table;
+	margin-top: -1px;
+	width: 100%;
+}
+.menuBottom li{
+	display: table-cell;
+	position: relative;
+	margin: 0 1px;
+	border-left: 1px solid #C2C3C1;
+	width: calc(100%/3); height: 60px;
+	padding: 0 10px;
+	
+	text-align: center;
+	line-height: 60px;
+	letter-spacing: 1px;
+}
+.menuBottom li a{
+	color: #888;
+}
+}

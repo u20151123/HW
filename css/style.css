@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 36px;
+	text-align: center;
+	color: #33FF00;
+}
+span{
+	margin: 30px;
+	color: #FFF;
+	font-size: 16px;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+div.sky{
+	background: url(../images/sky.jpg) no-repeat;
+	-moz-background-size: cover;/*for Firefox*/
+	-webkit-background-size: cover;/*for Google Chrome、Safari*/
+	-o-background-size: cover;/*for Opera*/
+	background-size: cover , cover;/*for IE*/
+	background-position: center top;
+	 
+	positiom: relative;
+	height: 100vh;
+}
+div.top{	
+	background: url(../images/sky3.png) no-repeat;
+
+	-moz-background-size: cover;/*for Firefox*/
+	-webkit-background-size: cover;/*for Google Chrome、Safari*/
+	-o-background-size: cover;/*for Opera*/
+	background-size: cover , cover;/*for IE*/
+	background-position: center top;
+
+    animation: mymove 5s infinite;
+    animation-timing-function: ease-in-out;
+	
+	position: absolute;
+	z-index: 0;
+	opacity: 0.35;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+}
+/* Standard syntax */
+@keyframes mymove {
+	/*0% {transform: scale(0.98);}
+    50% {transform: scale(0.93);}
+	100% {transform: scale(0.98);}*/
+	0% {transform: translate(0,5px);}	
+	50% {transform: translate(0,30px);}
+	100% {transform: translate(0,5px);}
+}
+div.title{
+	padding: 45vh 0;
+	text-align: center;
+}
+
+div.bottom{
+	background-color: #000;
+	max-width: 100%;
+	
+	position: relative;
+	z-index: 1;
+}
+
+div.content{
+	margin: 30px;
+	text-align: center;
+}
+
+#b1{
+	background: url(../images/Tokyo1.jpg) no-repeat;
+
+	-moz-background-size: cover;/*for Firefox*/
+	 -webkit-background-size: cover;/*for Google Chrome、Safari*/
+	 -o-background-size: cover;/*for Opera*/
+	 background-size: cover;/*for IE*/
+	 background-position: center top;
+}
+#b2{
+	background: url(../images/Tokyo2.jpg) no-repeat;
+
+	-moz-background-size: cover;/*for Firefox*/
+	 -webkit-background-size: cover;/*for Google Chrome、Safari*/
+	 -o-background-size: cover;/*for Opera*/
+	 background-size: cover;/*for IE*/
+	 background-position: center top;
+}
+#b3{
+	background: url(../images/Tokyo3.jpg) no-repeat;
+
+	-moz-background-size: cover;/*for Firefox*/
+	 -webkit-background-size: cover;/*for Google Chrome、Safari*/
+	 -o-background-size: cover;/*for Opera*/
+	 background-size: cover;/*for IE*/
+	 background-position: center top;
+}
+div.box:hover{
+	background: #A7A7A7;
+	opacity: 0.5;
+	transition: 1s;
+}
+footer{
+	text-align: center;
+	height: 50px;
+	background: #6F0B0D;
+	color: #FFF;
+}
+@media screen and (min-width: 769px) {
+	
+div.bottom{
+	height: 400px;
+}
+div.box{
+	width: calc(100%/3);
+	height: 300px;
+	float: left;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width:768px){
+
+div.bottom{
+	height: 700px;
+}
+div#b1 , #b2{
+	width: 50%;
+	height: 300px;
+	float: left;
+}
+div#b3{
+	width: 100%;	
+	height: 300px;
+	float: left;
+}
+
+}
+@media screen and (max-width: 480px) {
+
+div.bottom{
+	height: 1000px;
+}
+div.box{
+	width: 100%;
+	height: 300px;
+	float: left;
+}
+
+}

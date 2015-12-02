@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>360 Video</title>
+</head>
+
+<style>
+	*{margin: 0; padding: 0;}
+	
+	.video{
+		overflow: hidden;
+		height: 100vh;
+	}
+	.L2{
+		display: block;
+		position: absolute;
+		top: 5%; right: 5%;
+		
+		background: rgba(255,0,0,.3);
+		border: 2px solid #FFF;
+		border-radius: 25px;
+		width: 50px; height: 50px;
+		
+		text-align: center;
+		line-height: 50px;
+	}
+	.L2 a{
+		text-decoration: none;
+		color: #FFF;
+	}
+</style>
+
+<script src="js/jquery.js"></script>
+<script>
+	$(document).ready(function(){
+		$(".L2").click(function(){
+			$(".video iframe").attr("src","https://www.youtube.com/embed/ClAuhgFQpLo?rel=0&loop=1&autoplay=1&amp;controls=0&amp;showinfo=0");
+		});
+	});
+</script>
+
+<body>
+<div class="L2"><a href="#">L2</a></div>
+<div class="video">
+	<iframe width="100%" height="100%" src="http://eyes.kolor.com/video/i/kolor/00b38ce006473827562ed56cf09d03dc" type="text/html" width="800" height="450" frameborder="0" scrolling="no" allowfullscreen="true"> </iframe>
+	<!--iframe width="100%" height="100%" src="https://www.youtube.com/embed/AR9_SZtJ_KU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe-->
+</div>
+
+<!--object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
+    codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" 
+    width="100%" height="100%" title="Hello, Panorama">
+    <param name="allowFullScreen" value="true" />
+    <param name="movie" value="pan0.swf?panoSrc=pano.jpg" />
+    <param name="quality" value="high" />
+    <param name="BGCOLOR" value="#AAAAAA" />
+    <embed src="images/360D1.jpg" allowFullScreen="true" 
+        width="100%" height="100%" quality="high" 
+        pluginspage="http://www.macromedia.com/go/getflashplayer" 
+        type="application/x-shockwave-flash" bgcolor="#DDDDDD">
+    </embed>
+</object-->
+</body>
+
+</html>

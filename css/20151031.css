@@ -1,0 +1,215 @@
+@charset "utf-8";
+*{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 36px;
+	text-align: center;
+	color: #DAC085;
+}
+body{
+	margin: 0;
+	padding: 0; 
+//	min-width: 480px;
+}
+.clearfix:after{
+	display: block;
+	content: ".";
+	clear: both;
+	visibility: hidden;
+}
+
+.top{
+	background-image: url(http://www.jtbwedding.jp/preriearm/images/title-back.jpg);
+	-moz-background-size: cover;/*for Firefox*/
+	-webkit-background-size: cover;/*for Google Chrome、Safari*/
+	-o-background-size: cover;/*for Opera*/
+	background-size: cover , cover;/*for IE*/
+	background-position: center top;
+	
+	height: 100vh;
+}
+.topTitle{
+	padding: 45vh 0;
+}
+.about{
+	background-image: url(../images/20151031/about-back-texture.jpg);
+	-moz-background-size: cover;/*for Firefox*/
+	-webkit-background-size: cover;/*for Google Chrome、Safari*/
+	-o-background-size: cover;/*for Opera*/
+	background-size: cover , cover;/*for IE*/
+	background-position: center top;
+	
+	height: 90vh;
+}
+.aboutTitle{
+	padding: 10vh;
+}
+.about p{
+	padding: 50px;
+}
+p{
+	color: #333;
+	font-size: 16px;
+	text-align: justify;
+	line-height: 27px;
+	letter-spacing: 2px;
+}
+.WTC{
+	background-image: url(../images/20151031/concept-back.jpg);
+	-moz-background-size: cover;/*for Firefox*/
+	-webkit-background-size: cover;/*for Google Chrome、Safari*/
+	-o-background-size: cover;/*for Opera*/
+	background-size: cover , cover;/*for IE*/
+	background-position: center top;
+
+	padding: 0 50px;
+	height: 100vh;
+}
+.WTCbox{
+	float: left;
+	width: calc(90%/3);
+	margin: 10px 10px;
+}
+img{
+	width: 100%;
+}
+.plan{
+	background-image: url(../images/20151031/plan-back.jpg);
+	-moz-background-size: cover;/*for Firefox*/
+	-webkit-background-size: cover;/*for Google Chrome、Safari*/
+	-o-background-size: cover;/*for Opera*/
+	background-size: cover , cover;/*for IE*/
+	background-position: center top;
+	
+	padding: 20px 15%;
+	color: #FFF;
+}
+.plan p{
+	color: #FFF;
+}
+.plan img{
+	display: block;
+}
+.plan1{
+	margin: 20px 0;
+	width: 41.6%;
+	float: left;
+}
+.plan2{
+	margin: 20px 0;
+	width: 58.4%;
+	float: left;
+}
+.contact{
+	margin-top: 50px;
+	padding: 0 20px;
+	text-align: center;
+}
+.contact p{
+	text-align: center;
+}
+.contactB{
+	float: left;
+	width: calc(100%/3);
+}
+.contactBox{
+	border: 1px solid #CCC;
+	color: #666;
+	font-size: 16px;
+	margin: 0 auto;
+	width: 95%;
+}
+a{
+	font-size: 16px;
+	text-decoration: none;
+}
+hr{
+	width: 80%;
+	border: 1px solid #CCC;
+}
+.contactBox p{
+	text-align: center;
+	font-size: 14px;
+	margin: 10px 5px;
+}
+footer{
+	bottom: 0;
+	height: 50px;
+	line-height: 50px;
+	color: #CCC;
+	background: -webkit-radial-gradient(white 60%, gray 100%); /* Safari 5.1-6.0 */
+	background: -o-radial-gradient(white 60%, gray 100%); /* For Opera 11.6-12.0 */
+	background: -moz-radial-gradient(white 60%, gray 100%); /* For Firefox 3.6-15 */
+	background: radial-gradient(white 60%, gray 100%); /* Standard syntax */
+}
+.shop{
+	border: 1px solid #CCC;
+	margin: 10px;
+	padding: 10px;
+}
+.shop a{
+	font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN","Times New Roman", "游明朝", YuMincho, "メイリオ", Meiryo, serif;
+	color: #333;
+}
+.pic5{
+	max-width: 90%;
+	padding: 0 5%;	
+}
+.pic2{
+	max-width: 90%;
+}
+@media screen and (max-width:768px){
+	.WTC{
+		padding: 10px 30%;
+		height: auto;
+	}
+	.WTCbox{
+		float: none;
+		max-width: 260px;
+		width: 100%;
+		margin: 10px 10px;
+	}
+	.plan1{
+		float: none;
+		max-width: 300px;
+		width: 100%;
+		margin: 20px auto 0;
+	}
+	.plan2{
+		float: none;
+		max-width: 300px;
+		width: 100%;
+		margin: 0 auto 20px;
+	}
+	.contact{
+		padding: 0 15%;
+	}
+	.contactB{
+		float: none;
+		margin: 20px 0;
+		width: 100%;
+	}
+	.pic5{
+		max-width: 90%;
+		margin:0 auto;
+	}
+}
+/* CSS3 */
+.planGroup{
+	-webkit-filter: grayscale(80%); /* Chrome, Safari, Opera */
+    filter: grayscale(80%);
+	-webkit-transition: 1s;
+	transition: 1s;
+}
+.planGroup:hover{
+	-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+	-webkit-transition: 1s;
+	transition: 1s;
+}
+.shop a:hover{
+	color: #C29C58;
+	-webkit-transform: rotateX(360deg);
+	transform: rotateX(360deg);
+	-webkit-transition: 1s;
+	transition: 1s;
+}
